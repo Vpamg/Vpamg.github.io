@@ -1,0 +1,46 @@
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.home-section {
+    background-color: #DEEBEE;
+    padding: 100px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-section .left span {
+  color: #5e3bee;
+}
+
+.Skill-section {
+  padding: 100px 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-section {
+  padding: 100px 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#cardimg {
+  height: 285px;
+}
+
+#skill {
+  background-color: #DEEBEE;
+  padding: 100px 0 100px 0;
+}

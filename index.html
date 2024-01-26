@@ -1,167 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/8b82f71b43.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>omagad</title>
-    <link rel="icon" type="image/x-icon" href="assets/waduh-high-resolution-logo-black.png">
-</head>
-
-<body>
-    <nav>
-        <div class="logo">
-            <img src="assets/shocked-face-black.png">
-        </div>
-        <ul>
-            <li><a href="#main">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#project">project</a></li>
-            <li><a href="#contact">contact</a></li>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/8b82f71b43.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexv2.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/skills/skill-1/assets/css/skill-1.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+  <!-- NAVBAR -->
+<section class="navbar-section bg-light sticky-top"" id="navbar">
+  <nav class="navbar navbar-expand-lg mb-4"">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Omagad</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse fw-semibold" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="dropdownMenuButton"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Project
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="Story telling.html">Story Telling</a></li>
+              <li><a class="dropdown-item" href="Metaverse.html">Edufest Metaverse</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+          </li>
         </ul>
-    </nav>
-
-    <div class="main" id="main">
-        <div class="left">
-            <h5>Hey, I am Muhammad Jafar Risqullah</h5>
-            <h3><span>Computer</span> and <span>Network</span> engineering</h3>
-            <p>
-                I am a <span><b>uɐɯnH</b></span> live on earth by breathing where I eat, drink, sleep every day and repeat
-            </p>
-            <a href="ngapain dipencet.html"><button>Jangan Ditekan</button></a>
-        </div>
-        <div class="right">
-        </div>
+      </div>
     </div>
-
-    <div class="skills" id="skills">
-        <h3>My Skills</h3>
-        <div class="skill-items">
-            <div class="item">
-                <div class="icon"><i class="fa-solid fa-wifi"></i></div>
-                <h4>Routing</h4>
-                <progress id="file" max="100" value="30">30%</progress>
-            </div>
-            <div class="item">
-                <a href="#" class="icon"><i class="fa-solid fa-cube"></i></a>
-                <h4>Sketchup</h4>
-                <progress id="file" max="100" value="50">30%</progress>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bx-server'></i></i></div>
-                <h4>server configuration</h4>
-                <progress id="file" max="100" value="30">30%</progress>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
-                <h4>HTML</h4>
-                <progress id="file" max="100" value="10">30%</progress>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
-                <h4>CSS</h4>
-                <progress id="file" max="100" value="10">70%</progress>
-            </div>
-        </div>
+  </nav>
+</section>
+<!-- End Navbar -->
+  <!-- Home -->
+  <section class="home-section" id="home">
+    <div class="container">
+      <div class="left">
+        <h5>Hey, I am Muhammad Jafar Risqullah</h5>
+        <h1 class="fs-1"><span>Computer</span> and <span>Network</span> engineering</h1>
+        <p class="fs-4">
+          I am a <span><b>uɐɯnH</b></span> live on earth by breathing where I eat, drink, sleep and repeat
+        </p>
+      </div>
+      <div class="right">
+        <!-- Content -->
+      </div>
     </div>
-
-    <div class="about" id="about">
-        <div class="left">
+  </section>
+  <!-- End Home -->
+  <!-- Skill -->
+  <section class="bsb-skill-1 py-3 py-md-5" id="skill">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-5 text-center">My Skills</h2>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
         </div>
-        <div class="right">
-            <h2>About Me</h2>
-            <p>
-                Welcome to my portfolia(kinda)!I am a <span><b>Computer</b></span> and <span><b>Network</b></span> engineering based in earth. I am passionate about Tech.
-                I believe in continuous learning and staying updated with the latest developments in <span><b>skills</b></span>. My goal is to <span><b>live longer</b></span>.
-            </p>
-            <p>
-                Feel free to explore my <span><b>portfolia(kinda)</b></span> and get in touch if you have any questions or opportunities for collaboration.
-            </p>
-        </div>
+      </div>
     </div>
-
-    <div class="project" id="project">
-        <div class="header">
-            <div class="info">
-                <h3>Recent Projects</h3>
-            </div>
-        </div>
-        <div class="container">
-            <div class="box">
-              <span></span>
-              <div class="content">
-                <h2>Story Telling task</h2>
-                <p>StoryTelling task to make explaining a process volcanic eruption themed</p>
-                <a href="Story telling.html">Read more</a>
-              </div>
-            </div>
-            <div class="box">
-              <span></span>
-              <div class="content">
-                <h2>Edufest Metaverse</h2>
-                <p>A project in making an entire school in Metaverse using sketchup, and mozilla hubs</p>
-                <a href="Metaverse.html">Read More</a>
+    <div class="container overflow-hidden">
+      <div class="row justify-content-xl-center gy-3 gy-sm-4">
+        <div id="bsb-map-3" class="bsb-jvm-zoom-btn"></div>
+            <div class="card mt-5 border-4">
+              <div class="card-body">
+                <div class="row gy-3 gy-sm-4">
+                  <div class="col-12 col-sm-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h6 class="mb-3">Routing</h6>
+                        <div class="progress" role="progressbar" aria-label="United States Visitors" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-primary" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h6 class="mb-3">Sketchup</h6>
+                        <div class="progress" role="progressbar" aria-label="Brazil Visitors" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-success" style="width:65%">65%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h6 class="mb-3">Server configuration</h6>
+                        <div class="progress" role="progressbar" aria-label="Australia Visitors" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h6 class="mb-3">HTML</h6>
+                        <div class="progress" role="progressbar" aria-label="Australia Visitors" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-info" style="width: 15%">15%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h6 class="mb-3">CSS</h6>
+                        <div class="progress" role="progressbar" aria-label="Australia Visitors" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-info" style="width: 10%">10%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div
+                </div>
               </div>
             </div>
           </div>
-            
-        </div>
-
+      </div>
     </div>
-
-    <footer>
-        <div class="top">
-            <div class="logo">
-                <img src="assets/shocked-face-black.png">
-            </div>
-            <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#project">project</a></li>
-            </ul>
-            <div class="social-links" id="contact">
-                <a
-                target="_blank"
-                href="https://api.whatsapp.com/send/?phone=%2B6285965951001&text&type=phone_number&app_absent=0"
-                ><i class="bx bxl-whatsapp"></i
-              ></a>
-              <a target="_blank" href="https://twitter.com/Yantosahajir"
-                ><i class="bx bxl-twitter"></i
-              ></a>
-              <a
-                target="_blank"
-                href="https://www.reddit.com/u/Good_Appointment7235/s/x3r51gDCK0"
-                ><i class="bx bxl-reddit"></i
-              ></a>
-              <a target="_blank" href="https://discord.com/users/653846977699774525"
-                ><i class="bx bxl-discord"></i
-              ></a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/klox_far?igsh=MWlhczdwamMxNW8ycw=="
-                ><i
-                  class="bx bxl-instagram bx-flip-horizontal"
-                ></i
-              ></a>
-            </div>
+  </section>
+  <!-- End Skill -->
+  <!-- About Me -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="left">
+        <h2>About Me</h2>
+        <h3><span>Computer</span> and <span>Network</span> engineering</h3>
+        <p>
+          Welcome to my portfolia(kinda)!I am a <span><b>Computer</b></span> and <span><b>Network</b></span> engineering based in earth. I am passionate about Tech.
+          I believe in continuous learning and staying updated with the latest developments in <span><b>skills</b></span>. My goal is to <span><b>live longer</b></span>.
+      </p>
+      </div>
+      <div class="right">
+        <!-- Content -->
+      </div>
+    </div>
+  </section>
+  <!-- Project -->
+  <section class="py-3 py-md-5 py-xl-8" id="projects">
+    <div class="container mx-auto mt-4">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">My Projects</h2>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+          </div>
         </div>
-        <div class="separator">
-            <div class="bottom">
-                <p>
-                    Special thanks to ChatGPT, Black box Ai, and codepen
-                </p>
-                <p>
-                    2024 omagad. All Rights Reserved.  
-                </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/volcano1.jpg" class="card-img-top" id="cardimg">
+            <div class="card-body">
+              <h5 class="card-title">Story telling</h5>
+              <p class="card-text">StoryTelling task to make explaining a process with volcanic eruption themed</p>
+              <a href="Story telling.html" class="btn btn-primary mr-2"><i class="fas fa-link"></i> Read more</a>
             </div>
+          </div>
         </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/file.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Edufest Metaverse</h5>
+              <p class="card-text">A project in making an entire school in Metaverse using sketchup, and mozilla hubs</p>
+              <a href="Metaverse.html" class="btn btn-primary mr-2"><i class="fas fa-link"></i> Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Project -->
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container ">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-3">
+          <h2 class="section-title mb-3" id="contact">Contact As</h2>
+          <b></b><p class=" mb-3">
+          Muhammad Jafar Risqullah - A guy with absurd taste
+          </p>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="mb-0">Earth</div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="fa-solid fa-phone"></i></i>
+            <div class="mb-0">+62 821 2795 9596</div>
+          </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="fa-solid fa-envelope"></i>
+          <div class="mb-0">muhammadjafarrisqullah@gmail.com</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-5 mb-4">
+      <!--Form-->
+        <div class="card wow fadeInRight" data-wow-delay="0.3s">
+          <div class="card-body z-depth-2">
+          <!--Header-->
+            <div class="text-center">
+              <h3 class="dark-grey-text">
+                <strong>Write to us:</strong>
+                  </h3>
+                  <hr>
+                  </div>
+                  <!--Body-->
+                  <div class="md-form">
+                      <i class="fa fa-user prefix grey-text"></i>
+                      <input type="text" id="form3" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="md-form">
+                      <i class="fa fa-envelope prefix grey-text"></i>
+                      <input type="text" id="form2" class="form-control" placeholder="Your email">
+                    </div>
+                    <!--Textarea with icon prefix-->
+                    <div class="md-form">
+                      <i class="fa fa-pencil-alt prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="text-center mt-3 ">
+                      <button type="button" class="btn btn-outline-secondary">Send</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
